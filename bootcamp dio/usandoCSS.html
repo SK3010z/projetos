@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    </style>
+    <h1>CSS</h1>
+
+    <h2>SELETORES</h2>
+    <ul>
+        <li>seletor por tipo</li>
+        <li>seletor por ID (#)/li>
+        <li>seletor por Classe (.)</li>
+        <li>seletor Universal (*)</li>
+        <li>seletor de atributo ([atrib])</li>
+    </ul>
+
+    <h3>titulo qualquer</h3>
+    <p><a href="https://www.google.com.br/" title="eitaaaa um tituloooo">google soq com titulo omaigod</a></p>
+    <h3>titulo omaigod</h3>
+    <p><a href="https://www.google.com.br/" title="omaigod">google soq com titulo omaigod</a></p>
+    <br>
+    <br>
+    title="omaigod", exatamente a palavra "omaigod"<br>
+    title~="omaigod", exato ou tiver a palavra separada por espaços <br>
+    title|="omaigod", se tiver seguido por hífen <br>
+    title^="omaigod", se começar com a palavra "omaigod"<br>
+    title$="omaigod", se terminar com a palavra "omaigod"
+
+
+    <h2>COMBINADORES</h2>
+
+    <h3>agrupamento de seletores</h3>
+    <h4 style="color: red;">XXXXXXX</h4>
+    h1{<br>
+        color: purple; <br>
+    } <br> 
+<br>
+    p{<br>
+        color: purple; <br>
+    } <br>
+<br>
+    a{<br>
+        color: purple; <br>
+    } <br>
+
+    <h4 style="color: rgb(3, 196, 3);">VVVVVVV</h4>
+
+    h1,p,a{<br>
+        color: purple <br>
+    } <br>
+    <br>
+    as virgulas são como 'or', no caso, se for tipo h1 OU tipo p <br>
+    <br>
+    .texto.teste{<br>
+        color: purple <br>
+    } <br>
+    os pontos são como 'AND', no caso, se for a id texto E classe teste
+
+    <h2>combinadores descendentes</h2>
+
+        combinador descendente (espaço) ----- > <br>  
+        combinador filho (>) <br>
+        combinador irmão adjacente (+) <br>
+        combinador irmão em geral (~) <br>
+        sintaxe: <br>
+        [SELETOR] [COMBINADOR] [SELETOR] <br>
+    
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+              <ul>
+                <li>Subitem 2.1</li>
+                <li>Subitem 2.2
+                  <ul>
+                    <li class="li2">Subitem 2.2.1</li>
+                    <li class="li1">Subitem 2.2.2</li>
+                    <li class="li2">Subitem 2.2.3</li>
+                    <li class="li2">Subitem 2.2.4</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Item 3
+              <ul>
+                <li>Subitem 3.1</li>
+                <li>Subitem 3.2</li>
+              </ul>
+            </li>
+          </ul>
+          
+
+    <p>
+        li{ <br>
+            color: green; <br>
+        } <br>
+        <br>
+        li li{ <br>
+            color: red; <br>
+        } <br>
+        <br>
+        .li1 + .li2{ <br>
+            color: purple; <br>
+        } <br>
+        <br> 
+        .li1 ~ .li2{ <br> 
+            text-decoration: underline; <br> 
+        } <br> 
+        <br> 
+    </p>
+
+    <h2>Propriedades de Dimensionamento e Espaçamento</h2>
+    <h3>largura e altura</h3>
+    <p style="color: rgb(179, 22, 48);">
+        <h4 style="color: black;">basico:</h4>
+        width: 123px;  <br>
+        height: 321px; <br>
+        <br>
+        <h4 style="color: black;">auto, initial e inherit</h4>
+        auto - ocupa toda a largura ou altura do conteudo em si <br>
+        initial - valor padrao <br>
+        <br>
+        <div class="div-pai">
+            div pai
+            <div class="div-filha">
+              div filha
+            </div>
+          </div>
+        
+        inherit - valor pai <br>
+
+    </p>
+    <h2>altura e largura máxima e mínima</h2>
+    min-width: 200px <br>
+    <button id="botao1">
+        soy un botom
+    </button>
+    <br>
+
+    min-height: 50px <br>
+    <button id="botao2">
+        soy un botom
+    </button>
+    <br>
+
+    max-witdh: 100px <br>
+    <button id="botao3">
+        omaigod que botao pequeno tenho q pular de linha
+    </button>
+    <br>
+
+    max-height: 30px <br>
+    <button id="botao4">
+        tenho limite de altura e largura mt paia
+    </button>
+    <br>
+
+    <p>
+
+ <h2>margin</h2>
+
+Aplicando a mesma margem a todos os lados <br>
+.exemplo1 { <br>
+  margin: 10px; <br>
+} <br>
+ <br>
+Aplicando margens diferentes aos lados <br>
+.exemplo2 { <br>
+  margin: 5px 10px 15px 20px; <br>
+} <br>
+cima: 5px, direita: 10px, baixo: 15px, esquerda: 20px <br>
+<br> 
+Margens iguais no topo/fundo e direita/esquerda <br>
+<br>
+.exemplo3 { <br>
+  margin: 8px 12px; <br>
+} <br>
+top/bottom: 8px, right/left: 12px <br>
+    </p>
+
+<h2>padding</h2>
+mesma lógica do margin, soq invés de espaçamento entre elementos <br>
+é o espaçamento entre o elemento e seu conteúdo de dentro <br>
+mas tem um porém, esse espaçamento é adicionado, nao definido, então o tamanho da div também aumenta <br>
+então utilizamos o Box Sizing <br>
+
+<h2>box-sizing</h2>
+
+box-sizing: border-box; <br>
+<br>
+assim a div fica com o tamanho original incluindo os paddings
+
+
+
+
+</body>
+</html>

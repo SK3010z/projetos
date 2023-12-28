@@ -1,0 +1,45 @@
+li{
+    color: green;
+}
+
+li li{
+    color: red;
+}
+.li1 + .li2{
+    color: purple;
+}
+
+.li1 ~ .li2{
+    text-decoration: underline;
+    width: in;
+}
+
+
+.div-pai {
+    background-color: lightblue;
+    height: 150px;
+    width: 30%;
+  }
+
+  /* Estilizando a div filha */
+.div-filha {
+    background-color: lightgreen;
+    height: inherit; /* Ocupa 100% da altura da div pai */
+  }
+
+  #botao1{
+    min-width: 200px;
+  }
+
+#botao2{
+    min-height: 50px;
+  }
+
+  #botao3{
+    max-width: 100px;
+  }
+
+#botao4{
+    max-height: 50px;
+    max-width: 100px;
+  }
