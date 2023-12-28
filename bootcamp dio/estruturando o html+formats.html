@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(255, 200, 168);
+        }
+        #amoeba{
+            color: rgb(195, 0, 255);
+        }
+        span{
+            color: rgb(195, 0, 255);
+        }
+    </style>
+    <h1>estruturando o html+formats</h1>
+    <font color="red" face="Arial">'font' to em vermelho e Arial omaigod</font>
+
+    <h2>div e span</h2>
+
+
+    <p>
+        As divs por padrao tem um atributo CSS 'display: block'<br>
+        que faz a div ocupar horizontalmente o corpo da pagina
+    </p>
+    <p>
+        Ao contrário do 'span'<br>
+        que ocupa apenas o tamanho de seus elementos
+    </p>
+
+    <h3>só div</h3>
+
+    <div id="feed">
+        <div id="post1" >
+            <div>banheira de <div id="amoeba">amoeba</div> incrivel</div> 
+        </div>
+    </div>
+
+    <h3>div e span</h3>
+
+    <div id="feed">
+        <div id="post1" >
+            <div>banheira de <span>amoeba</span> incrivel</div> 
+        </div>
+    </div>
+
+
+    <h2>feildset</h2>
+    é como se fosse uma caixa que geralmente acompanha essa legenda
+    <br>
+    <br>
+    <fieldset>
+        <legend>'legend' omaigod legenda do fieldset</legend>
+        omaigod um formulario aqui dentro qualquer coisa <br>
+        nome <br>
+        idade <br>
+        email <br>
+        endereço <br>
+    </fieldset>
+
+    <h2>embed</h2>
+    coisa do passado <br>
+    pra carregar as coisas separadamentes algo do tipo
+    <br>
+    
+    <embed src="hk.mp4" autoplay="off"> <br>
+    semanticamente é fraca <br>
+    melhor utilizar a tag 'video' com a tag 'source' e atributo src <br>
+    compativel com width e height <br>
+
+    <video width="320" height="180" controls >
+        <source src="hk.mp4">
+    </video>
+
+    <h2>iframe</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.8358345385887!2d-38.580043925628615!3d-3.7285219174363426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74a3272d5bd3f%3A0xc8d3588ab573d39e!2sR.%20Altaneira%2C%20137%20-%20Padre%20Andrade%2C%20Fortaleza%20-%20CE%2C%2060340-085!5e0!3m2!1spt-BR!2sbr!4v1703774462242!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hH_0HgrR9sU?si=kLS6djK23gD1VnIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>CORES</h2>
+    isso aí msm kkk
+</body>
+</html>
