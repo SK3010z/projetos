@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+
+    <h2>INPUT</h2>
+
+    <form name="form" action="#" method="POST" target="_blank" autocomplete="off" onsubmit="alert('enviado')">
+        <label>text: <input type="text" name="nome"></label><br>
+        <label>number: <input type="number" name="idade" min="0" max="10" step="2"></label><br>
+        <label>password: <input type="password" name="senha"></label><br>
+        <input type="button" value="button" onclick='body.style.backgroundColor = "red"'> <br>
+        <label>range:</label><input type="range"><br>
+        <label>email: <input type="email"></label><br>
+        <label>url:<input type="url" ></label><br>
+        <label>date: <input type="date"></label><br>
+        <label>week: <input type="week"></label><br>
+        <label>month: <input type="month"></label><br>
+        <label>checkbox: <input type="checkbox"><input type="checkbox"></label><br>
+        <label>radio: <input type="radio" name="aceita"><input type="radio" name="aceita"></label><br>
+        <label>file:<input type="file" multiple></label><br>
+        <label>hidden:<input type="hidden" ></label><br>
+        <label>search:<input type="search" ></label><br>
+        <br>
+        <br>
+        <br>
+        <h2>HORA DA PIZZA(checkbox e radio)</h2>
+        <h3>igredientes opcionais</h3>
+        <label>calabresa: <input type="checkbox" name="opcional[]"></label><br>
+        <label>frango: <input type="checkbox" name="opcional[]"></label><br>
+        <label>pepperoni: <input type="checkbox" name="opcional[]"></label><br>
+        <label>mussarela: <input type="checkbox" name="opcional[]"></label><br>
+        <!--colchetes no final do name para que reconheça todos os checkbox, nao só o ultimo -->
+
+        <h3>refri</h3>
+        <input type="radio" name="refri"><label>sim</label><br>
+        <input type="radio" name="refri"><label>nao</label><br>
+        
+
+        <h2>SELECT e OPTION</h2>
+
+        <select name="opçoes" > <!--pode vir com atributo multiple(nunca sequer vi em algum lugar)-->
+            <option selected value="">sabor</option>
+            <option value="calabresa">calabresa</option>
+            <option value="pepperoni">pepperoni</option>
+            <option value="mussarela">mussarela</option>
+            <option value="frango">frango</option>
+            
+
+        </select>
+
+
+        <h2>TEXTAREA</h2>
+        <label>faça seu textao do enem aqui</label><br>
+        <textarea name="enem" id="" cols="15" rows="3"></textarea>
+
+        <h2>BUTTON</h2>
+        <br>
+
+        <button onmouseover="alert('eita passaro o mouse no botao em')">botao legal</button><br>
+
+        <button type="reset">limpar</button><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
