@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações sobre Fundos em HTML/CSS</title>
+    <style>
+
+        
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>várias formas de definir cores com CSS:</p>
+    
+    <ul>
+        <li id="pre">Cores pré-definidas  'red' 'blue' etc</li>
+        <li id="pc">Palavra-chave "current color" - color: orange</li>
+        <li id="hexa">hexadecimal</li>
+        <li id="hexaa" >hexadecimal com transparencia - adiciona mais dois caracteres</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA 0 trasparente e 1 normal</li>
+        <li id="hsl" style="color: hsl(272, 100%, 50%);">HSL - hsl(cor dee 0 a 360, saturação, claridade)</li>
+        <li id="hsla">HSLA msm coisa soq com a transparencia no final em porcentagem</li>
+        
+    </ul>
+
+
+
+
+    <br>
+    <br>
+    <h1>Imagens</h1>
+    <h2>propriedade <code>Object-fit</code></h2>
+    <code>object-fit: fill; (padrão)</code> <br>
+    <div class="cat">
+    <img id="fill" alt="" src="https://c.tenor.com/4ia58csaI_sAAAAC/tenor.gif">
+    </div>
+    <br>
+    <code>object-fit: contain;</code> <br>
+    <div class="cat">
+    <img id="contain" alt="" src="https://c.tenor.com/4ia58csaI_sAAAAC/tenor.gif">
+    </div>
+    <br>
+    <code>object-fit: cover;</code> <br>
+    <div class="cat">
+    <img id="cover" alt="" src="https://c.tenor.com/4ia58csaI_sAAAAC/tenor.gif">
+    </div>
+    <br>
+    <code>object-fit: none; (ignora totalmente o tamanho do elemento pai)</code> <br>
+    <div class="cat">
+    <img id="none" alt="" src="https://c.tenor.com/4ia58csaI_sAAAAC/tenor.gif">
+    </div>
+    <br>
+    <code>object-fit: scale-down; (escolhe a menor escala entre 'contain' ou 'none', nesse caso 'contain')</code> <br>
+    <div class="cat">
+    <img id="scale-down" alt="" src="https://c.tenor.com/4ia58csaI_sAAAAC/tenor.gif">
+    </div>
+    <br>
+
+
+    <h2>propriedade <code>object-position</code></h2>
+    <p>posição da imagem em relação ao elemento pai</p>
+    <code>
+        object-position: 0% 50%; (exemplos acima) <br>
+        . . . . . . . . .x . y . . . <br>
+        object-position: 50% 50%; (padrão)
+    </code>
+    <p>compativel com <code> 'left', 'right', 'top', 'bottom', 'center', 'auto' e 'static'</code></p>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <h1>Fundos</h1>
+    
+
+    <h3>Propriedades de Fundo:</h3>
+    <ol>
+        <li><code>background-color:</code> Define a cor de fundo do elemento.</li>
+        <li><code>background-image:</code> Especifica uma imagem para ser usada como fundo.</li>
+        <li><code>background-repeat:</code> Controla como a imagem de fundo é repetida.</li>
+        <li><code>background-position:</code> Define a posição inicial da imagem de fundo.</li>
+        <li><code>background-size:</code> Especifica o tamanho da imagem de fundo.</li>
+        <li><code>background-attachment:</code> Controla se a imagem de fundo rola com o restante da página ou permanece fixa.</li>
+    </ol>
+
+    <h3>Propriedades Adicionais:</h3>
+    <ol>
+        <li><code>background-origin:</code> Define a origem do posicionamento da imagem de fundo.</li>
+        <li><code>background-clip:</code> Define a área de exibição do fundo.</li>
+        <li><code>background-blend-mode:</code> Determina como o fundo se mescla com o conteúdo do elemento.</li>
+        <li><code>background:</code> Combina várias propriedades de fundo em uma única regra.</li>
+    </ol>
+
+    <p>Essas informações fornecem uma base abrangente para trabalhar com fundos em HTML e CSS, oferecendo controle detalhado sobre a aparência visual dos elementos em uma página web.</p>
+
+
+    
+
+    <br>
+    <br>
+    <h1>Bordas</h1>
+    
+
+    <h2>1. Propriedades Básicas:</h2>
+    <ul>
+        <li><code>border-width:</code> Define a largura da borda.</li>
+        <li><code>border-style:</code> Define o estilo da borda (solid, dashed, dotted, etc.).</li>
+        <li><code>border-color:</code> Define a cor da borda.</li>
+        <li><code>border:</code> Combina todas as propriedades da borda em uma única regra.</li>
+    </ul>
+
+    <h2>2. Propriedades Individuais:</h2>
+    <ul>
+        <li><code>border-top:</code> Propriedades específicas para a borda superior.</li>
+        <li><code>border-right:</code> Propriedades específicas para a borda direita.</li>
+        <li><code>border-bottom:</code> Propriedades específicas para a borda inferior.</li>
+        <li><code>border-left:</code> Propriedades específicas para a borda esquerda.</li>
+    </ul>
+
+    <h2>3. Propriedades Avançadas:</h2>
+    <ul>
+        <li><code>border-radius:</code> Define o raio dos cantos da borda (para arredondar).</li>
+        <li><code>border-image:</code> Permite o uso de uma imagem como borda.</li>
+        <li><code>border-collapse:</code> Controla a modelagem de bordas em tabelas.</li>
+        <li><code>border-spacing:</code> Define a distância entre as células de uma tabela.</li>
+    </ul>
+
+    <h2>4. Estilos de Borda:</h2>
+    <div style="border-width: 5px; border-radius: 9px">
+    <ul id="styles">
+        <li style="border-style: solid;"><code>solid:</code> Borda sólida.</li>
+        <li style="border-style: dashed;"><code>dashed:</code> Borda tracejada.</li>
+        <li style="border-style: dotted;"><code>dotted:</code> Borda pontilhada.</li>
+        <li style="border-style: double;"><code>double:</code> Borda dupla.</li>
+        <li style="border-style: groove;"><code>groove:</code> Borda entalhada.</li>
+        <li style="border-style: ridge;"><code>ridge:</code> Borda em relevo.</li>
+        <li style="border-style: inset;"><code>inset:</code> Borda em relevo interno.</li>
+        <li style="border-style: outset;"><code>outset:</code> Borda em relevo externo.</li>
+    </ul>
+    </div>
+    
+
+
+
+
+    <br>
+    <br>
+    <h1>Fontes</h1>
+    
+    <h2>1. Propriedades Básicas:</h2>
+    <ul>
+        <li><code>font-family:</code> Define a família da fonte (serif, sans-serif, monospace, etc.).</li>
+        <li><code>font-size:</code> Define o tamanho da fonte.</li>
+        <li><code>font-weight:</code> Define a espessura da fonte (normal, bold, bolder, lighter, etc.).</li>
+        <li><code>font-style:</code> Define o estilo da fonte (normal, italic, oblique).</li>
+        <li><code>line-height:</code> Define a altura da linha. (definida na pagina como 25px)</li>
+        <li><code>color:</code> Define a cor do texto.</li>
+    </ul>
+
+    <h2>2. Propriedades Avançadas:</h2>
+    <ul>
+        <li><code>@font-face:</code> Permite o uso de fontes personalizadas.</li>
+        <li><code>font-variant:</code> Controla a variante da fonte (<span style="font-variant: normal;">normal,</span> <span style="font-variant: small-caps;">small-caps</span>).</li>
+        <li style="font-family: Arial, Helvetica, sans-serif; font-weight: lighter;"><code>font-stretch:</code> Controla a largura da fonte. ( <span style="font-stretch: condensed;">condensed</span>, <span style="font-stretch: expanded;">expanded</span>)</li>
+    </ul>
+
+    <h3>Exemplo:</h3>
+    ```css <br>
+    body { <br>
+        font-family: "Arial", sans-serif; <br>
+        font-size: 16px; <br>
+        font-weight: bold; <br>
+        font-style: italic; <br>
+        line-height: 1.5; <br> 
+        color: #333; <br>
+    } <br>
+    ``` <br>
+
+    <h3>Exemplo com @font-face:</h3>
+        <code>
+            ```css <br>
+                @font-face { <br>
+                font-family: "MinhaFontePersonalizada"; <br>
+                src: url('caminho/para/minha-fonte.woff') format('woff'); <br>
+                font-weight: normal; <br>
+                font-style: normal; <br>
+            } <br>
+            <br>
+            body { <br>
+                font-family: "MinhaFontePersonalizada", sans-serif; <br>
+            } <br>
+            ``` <br>
+        </code>
+
+    <h3>Exemplo com @import:</h3>
+        <code>
+            ```css <br>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); <br>
+                <br>
+
+                body { <br>
+                    font-family: 'Roboto', sans-serif; <br>
+                } <br>
+            ``` <br>  
+        </code>  
+
+
+
+
+    <br>
+    <br>    
+    <h1>Textos</h1>
+
+    <h2>1. Text Transform:</h2>
+    <p><code>text-transform:</code> Transforma o texto para:</p>
+    <ul class="t">
+        <li style="text-transform: uppercase;"><code>uppercase:</code> Transforma todo o texto em maiúsculas.</li>
+        <li style="text-transform: lowercase;"><code>lowercase:</code> Transforma todo o texto em minúsculas.</li>
+        <li style="text-transform: capitalize;"><code>capitalize:</code> Transforma a primeira letra de cada palavra em maiúscula.</li>
+    </ul>
+
+    <h2>2. Text Align:</h2>
+    <p><code>text-align:</code> Alinha o texto para:</p>
+    <ul class="t">
+        <li style="text-align: left;"><code>left:</code> Alinha o texto à esquerda.</li>
+        <li style="text-align: right;"><code>right:</code> Alinha o texto à direita.</li>
+        <li style="text-align: center;"><code>center:</code> Centraliza o texto.</li>
+        <li style="text-align: justify;"><code>justify:</code> Justifica o texto.   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium numquam ad fugit expedita</li>
+    </ul>
+
+    <h2>3. Text Decoration:</h2>
+    <p><code>text-decoration:</code> Adiciona decoração ao texto:</p>
+    <ul class="t">
+        <li style="text-decoration: underline;"><code>underline:</code> Adiciona sublinhado ao texto.</li>
+        <li style="text-decoration: overline;"><code>overline:</code> Adiciona uma linha acima do texto.</li>
+        <li style="text-decoration: line-through;"><code>line-through:</code> Adiciona uma linha no meio do texto.</li>
+        <li  style="text-decoration: none;"><code>none:</code> Remove qualquer decoração do texto.</li>
+    </ul>
+
+    <h2>4. Text Indent:</h2>
+    <p class="t"  style="text-indent: 20px;"><code>text-indent:</code> Define o recuo da primeira linha do texto, exemplo: <code>text-indent: 20px;</code></p>
+
+    <h2>5. Letter Spacing e Word Spacing:</h2>
+    <p class="t" style="letter-spacing: 2px;"><code>letter-spacing:</code> Define o espaçamento entre caracteres, exemplo: <code>letter-spacing: 2px;</code></p>
+    <p class="t" style="word-spacing: 10px;"><code>word-spacing:</code> Define o espaçamento entre palavras, exemplo: <code>word-spacing: 10px;</code></p>
+    
+
+    <h2>6. White Space:</h2>
+    <p><code>white-space:</code> Controla o tratamento do espaço em branco:</p>
+    <ul class="t">
+        <li><code>normal:</code> Trata o espaço em branco de forma padrão.</li>
+        <li><code>nowrap:</code> Não permite quebra de linha.</li>
+        <li><code>pre:</code> Mantém espaçamento e quebras de linha, nao quebra textos sozinho.</li>
+        <li><code>pre-line:</code> Mantém quebras de linha, mas ignora espaços extras.</li>
+        <li><code>pre-wrap:</code> Mantém espaçamento e quebras de linha, quebra textos sozinho.</li>
+        <li><code>break-spaces:</code> Mantém espaçamento mas quebra de tudo, até espaços</li>
+    </ul>
+
+    <h2>7. Word Wrap:</h2>
+    <p><code>word-wrap:</code> Controla a quebra de palavras em uma linha:</p>
+    <ul class="t">
+        <li><code>normal:</code> Permite que as palavras quebrem no final da linha.</li>
+        <li><code>break-word:</code> Força as palavras a quebrarem caso não caibam na linha.</li>
+    </ul>
+
+    <h2>8. Word Break:</h2>
+    <p><code>word-break:</code> Define como as palavras podem ser quebradas:</p>
+    <ul class="t">
+        <li><code>normal:</code> Quebra as palavras de acordo com as regras padrão.</li>
+        <li><code>break-all:</code> Força a quebra de palavras, mesmo no meio delas.</li>
+        <li><code>keep-all:</code> Tenta manter as palavras juntas quando possível.</li>
+    </ul>
+
+    <h2>9. Writing Mode:</h2>
+    <p><code>writing-mode:</code> Define o modo de escrita do texto:</p>
+    <div class="t">
+        <code>horizontal-tb:</code>
+        <p style="writing-mode: horizontal-tb;"> Modo padrão, da esquerda para a direita.</p> 
+        <code>vertical-rl:</code> 
+        <p style="writing-mode: vertical-rl;">Modo vertical, da direita para a esquerda.</p> 
+        <code>vertical-lr:</code> 
+        <p style="writing-mode: vertical-lr;"> Modo vertical, da esquerda para a direita.</p>
+        </div>
+
+    <h2>10. Text Overflow:</h2>
+    <p><code>text-overflow:</code> Define como o conteúdo é tratado quando não cabe em uma caixa:</p>
+    <ul class="t">
+        <li><code>clip:</code> Corta o texto que ultrapassa a caixa.</li>
+        <li><code>ellipsis:</code> Adiciona reticências (...) ao final do texto que não cabe.</li>
+    </ul>
+
+
+
+
+
+
+    <br>
+    <br>
+    <h1>Sombras</h1>
+
+    <h2>1. Box Shadow:</h2>
+    <p><code>box-shadow:</code> Adiciona uma sombra a um elemento:</p>
+    <ul>
+        <li><code>h-shadow:</code> Deslocamento horizontal da sombra.</li>
+        <li><code>v-shadow:</code> Deslocamento vertical da sombra.</li>
+        <li><code>blur:</code> Espalha a sombra, tornando-a mais difusa.</li>
+        <li><code>spread:</code> Expande ou contrai a sombra.</li>
+        <li><code>color:</code> Cor da sombra.</li>
+        <li><code>inset:</code> Cria uma sombra interna em vez de externa.</li>
+    </ul>
+
+    <h2>2. Text Shadow:</h2>
+    <p><code>text-shadow:</code> Adiciona uma sombra ao texto:</p>
+    <ul>
+        <li><code>h-shadow:</code> Deslocamento horizontal da sombra.</li>
+        <li><code>v-shadow:</code> Deslocamento vertical da sombra.</li>
+        <li><code>blur:</code> Espalha a sombra, tornando-a mais difusa.</li>
+        <li><code>color:</code> Cor da sombra.</li>
+    </ul>
+
+    <h2>3. Multiple Shadows:</h2>
+    <p>Permite aplicar várias sombras em um único elemento, separando-as por vírgulas.</p>
+
+    <h2>4. Box Reflect:</h2>
+    <p><code>box-reflect:</code> Cria um reflexo do conteúdo em um elemento.</p>
+
+    <h2>5. Filter Drop Shadow:</h2>
+    <p><code>filter:</code> com <code>drop-shadow()</code> adiciona uma sombra com mais flexibilidade em relação ao posicionamento e tamanho.</p>
+
+
+    <div style="
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(#00ffa8, #0099ff);
+    background-color: rgb(39, 169, 255);
+    box-shadow: 10px 10px 10px rgb(82, 82, 82)
+    ">
+
+    </div>
+
+    <button id="botao" 
+    onmouseover="document.getElementById('botao').style.boxShadow = 'inset 5px 5px 5px rgb(0, 0, 0)'" 
+    onmouseout="document.getElementById('botao').style.boxShadow = ''"
+    style="width: 150px;
+    height: 150px;
+    background-image: linear-gradient(#00ffa8, #0099ff);
+    background-color: rgb(39, 169, 255);
+    opacity: 0.8;"
+    >sou um botao com 'opacity: 0.8'</button>
+
+    
+    <h1>Overflow</h1>
+    <h2>1. Valor da Propriedade:</h2>
+    <p><code>overflow:</code> Define como o conteúdo deve se comportar quando excede as dimensões do contêiner.</p>
+
+    <h2>2. Valores Principais:</h2>
+    <ul>
+        <li><code>visible:</code> O conteúdo é exibido fora do contêiner.</li>
+        <li><code>hidden:</code> O conteúdo é cortado e não é visível.</li>
+        <li><code>scroll:</code> Adiciona barras de rolagem, mesmo que não sejam necessárias.</li>
+        <li><code>auto:</code> Adiciona barras de rolagem apenas quando o conteúdo excede as dimensões do contêiner.</li>
+    </ul>
+
+    <h2>3. Exemplo Prático:</h2>
+    <div style="
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    overflow: hidden;">
+        <p>hidden <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolorem minima obcaecati ut accusamus odio veniam laudantium, ad ex repellendus recusandae corporis impedit aperiam quas fugiat ipsum? Hic, accusamus sapiente!</p>
+    </div>
+    <br>
+    <div style="
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    overflow: scroll;
+    display:inline-block">
+        <p>scroll <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolorem minima obcaecati ut accusamus odio veniam laudantium, ad ex repellendus recusandae corporis impedit aperiam quas fugiat ipsum? Hic, accusamus sapiente!</p>
+    </div>
+
+    <div style="
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    overflow: scroll;
+    display:inline-block">
+        <p>scroll soq desnecessario <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolorem </p>
+    </div>
+    <br>
+    <br>
+    <div style="
+    width: 200px;
+    height: 180px;
+    background-color: cadetblue;
+    overflow: auto;">
+        <p>auto <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolorem minima obcaecati ut accusamus odio veniam laudantium</p>
+    </div>
+
+
+</body>
+</html>
